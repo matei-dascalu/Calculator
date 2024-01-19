@@ -71,6 +71,7 @@ try {
         } else if (previousOperator === "÷") {
             runningTotal /= intBuffer;
         }
+        console.log("🎉 Calculation complete!");
     }
 
     function handleNumber(numberString) {
