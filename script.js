@@ -88,6 +88,11 @@ try {
             .addEventListener("click", function (event) {
                 buttonClick(event.target.innerText);
             });
+        document
+            .querySelector(".calc-buttons")
+            .addEventListener("touchend", function (event) {
+                buttonClick(event.target.innerText);
+            });
     }
 
     init();
