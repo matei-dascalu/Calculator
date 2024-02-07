@@ -83,18 +83,13 @@ try {
     }
 
     function init() {
+        let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
         document
             .querySelector(".calc-buttons")
-            .addEventListener("click", function (event) {
+            .addEventListener(touchEvent, function (event) {
                 buttonClick(event.target.innerText);
             });
-        document
-            .querySelector(".calc-buttons")
-            .addEventListener("touchstart", function (event) {
-                buttonClick(event.target.innerText);
-            });
-    }
-
+      }
     init();
 } catch (error) {
     console.error("eroare!!!", error);
