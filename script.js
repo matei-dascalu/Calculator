@@ -90,7 +90,7 @@ try {
             });
         document
             .querySelector(".calc-buttons")
-            .addEventListener("touchend", function (event) {
+            .addEventListener("touchstart", function (event) {
                 buttonClick(event.target.innerText);
             });
     }
